@@ -6,6 +6,7 @@ font-family: 'Inter', sans-serif; */
 
 * {
   box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 
 html {
@@ -272,23 +273,22 @@ section {
 
 /* Tombol di kanan bawah */
 #playButton {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 20px;
-    background-color: rgb(160, 111, 76);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    z-index: 100; /* Pastikan tombol berada di atas elemen lain */
-  }
-  
-  #playButton:hover {
-    background-color: rgb(164, 101, 57);
-  }
-  
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: rgb(160, 111, 76);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 1000; /* Pastikan tombol berada di atas elemen lain */
+}
+
+#playButton:hover {
+  background-color: rgb(164, 101, 57);
+}
 
 footer {
   width: 100vw;
@@ -366,12 +366,12 @@ footer p {
     justify-content: center;
     align-items: center;
   }
-  
+
   .section_content h2 {
     font-size: 20px;
     margin: 0;
   }
-  
+
   .section_content p {
     margin: 0;
     font-size: 10px;
@@ -398,7 +398,7 @@ footer p {
     display: flex;
     align-items: center;
   }
-  
+
   .form_group input {
     /* flex: 1; */
     height: 40px;
@@ -411,7 +411,7 @@ footer p {
     border: none;
     border-radius: 5px;
   }
-  
+
   .form_buku_tamu button {
     height: 45px;
     background-color: black;
@@ -444,23 +444,22 @@ footer p {
     cursor: pointer;
     border-radius: 5px;
   }
-  
+
   .btn_map:hover {
     box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.39);
   }
 
-.gallery_list {
+  .gallery_list {
     display: flex;
     justify-content: center;
-    margin-left: -50px;
-}
+    /* margin-left: -0px; */
+  }
 
-  .gallery_list .click{
-    
+  .gallery_list .click {
     width: 300px;
     gap: 2px;
   }
-  .gallery_list .click{
+  .gallery_list .click_2 {
     display: none;
   }
 }
